@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	color: #333;
+}
+body {
+	padding: 30px 0;
+	text-align: center;
+	font-family: Arial, Verdana, Sans-serif;
+	line-height: 21px;
+	font-size: 12px;
+	background: #ddd;
+}
+h1 {
+	font-size: 21px;
+	padding-bottom: 20px;
+	font-style: italic;
+}
+#wrapper {
+	text-align: left;
+	width: 800px;
+	margin: 0 auto;
+}
+#images {
+	list-style: none;
+}
+#images li,#images li a,#images li a img {
+	float: left;
+}
+#images li {
+	padding: 7px;
+	margin-right: 4px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background: #fff;
+}
+.dn {
+	display: none;
+}
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	z-index: 10000;
+}
+#lightbox {
+	text-align: left;
+	padding: 10px;
+	z-index: 999999;
+	background: #fff;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	position: fixed;
+	top: -999999em;
+	left: 50%;
+}
+#lightbox-wrapper {
+	background: #111;
+}
+#lightbox-content {
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+}
+#lightbox-tools {
+	height: 25px;
+	position: relative;
+	bottom: 0;
+	line-height: 0;
+}
+#lightbox-close,#lightbox-tools .paging {
+	width: 16px;
+	height: 16px;
+	text-indent: 999999em;
+	overflow: hidden;
+	background-image: url(/images/pagination.png);
+	background-repeat: no-repeat;
+	display: none;
+	position: absolute;
+	top: 5px;
+}
+#lightbox-prev,#lightbox-prev-inactive {
+	left: 5px;
+}
+#lightbox-next,#lightbox-next-inactive {
+	left: 25px;
+}
+#lightbox-prev {
+	background-position: 0 0;
+	cursor: pointer;
+}
+#lightbox-prev-inactive {
+	background-position: 0 -16px;
+	cursor: default;
+}
+#lightbox-next {
+	background-position: 0 -32px;
+	cursor: pointer;
+}
+#lightbox-next-inactive {
+	background-position: 0 -48px;
+	cursor: default;
+}
+#lightbox-close {
+	background-position: 0 -64px;
+	cursor: pointer;
+	display: block;
+	right: 5px;
+}
+#lightbox-title {
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background-color: #000;
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	position: absolute;
+	bottom: 15px;
+	padding: 6px 20px;
+	color: #fff;
+	font-style: italic;
+}
+.preloader {
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	background: #262626;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
+}
+
+
+
+
+
+
